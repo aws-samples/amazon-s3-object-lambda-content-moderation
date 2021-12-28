@@ -1,0 +1,2 @@
+#Pillow will be used for image loading and blurring
+Pillow
