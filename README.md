@@ -30,7 +30,8 @@ Then retrieve the images via the S3 object lambda access point (OLAP) by using t
 You can find the S3 bucket name and the S3 OLAP ARN in the outputs of the SAM deployment process in the CLI or by checking the outputs tab of the created CloudFormation stack.
 
 For example:
-- Get a few images. We will take two images from the Amazon Rekognition public sample bucket:\
+- Copy a few sample images to the `images` folder.\
+For example, here are two images from the Amazon Rekognition Immersionday bucket:\
 `aws s3api get-object --bucket aws-rek-immersionday-eu-west-1 --key media/object-detection/cars.png images/cars.png`\
 `aws s3api get-object --bucket aws-rek-immersionday-eu-west-1 --key media/content-moderation/yoga_swimwear_resized.jpg images/yoga_swimwear.jpg`
 - Upload the images to the S3 bucket created before:\
